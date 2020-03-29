@@ -51,4 +51,14 @@ class UserTest extends TestCase {
         $this->assertTrue($user->notify('O jantar esstá servido.'));
     }
 
+
+    public function testUserNotificationIsSentEmailEmpty()
+    {
+        $user = new User();
+        $mock_mailer = $this->getMockBuilder(Mailer::class)->setMethods(null)->getMock();
+        $user->setMailer($mock_mailer);
+        $this->expectException(Exception::class);
+        $user->notify('Hello');
+    }
+
 }
