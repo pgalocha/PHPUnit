@@ -3,6 +3,7 @@
   "description": "PHPUnit Course System",
   "type": "project",
   "require": {
+    "mockery/mockery": "^1.3",
     "phpunit/phpunit": "^9",
     "roave/security-advisories": "dev-master"
   },
@@ -24,4 +25,3 @@
   "minimum-stability": "dev",
   "prefer-stable": true
 }
-
