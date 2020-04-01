@@ -11,8 +11,7 @@ class SecondOrderTest extends TestCase
     {
         Mockery::close();
     }
-
-
+        
     public function testOrderIsProcessedUsingMock()
     {
         $order = new SecondOrder(3, 5.97);
