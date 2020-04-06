@@ -25,9 +25,6 @@ In this curse, I experienced many ways of testing and create my tests.
 * Mockery
 * IDE (PHPStorm)
 
-### Installation
--
-
 ## Certificate
 
 [Certificate Udemy][8]
