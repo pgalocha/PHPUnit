@@ -1,5 +1,5 @@
 {
-  "name": "home/PHPUit",
+  "name": "home/php-unit",
   "description": "PHPUnit Course System",
   "type": "project",
   "require": {
