@@ -26,13 +26,7 @@ In this curse, I experienced many ways of testing and create my tests.
 * IDE (PHPStorm)
 
 ### Installation
-
-1. Copy project to local environment - `git clone git@github.com:phalcon/invo.git`
-2. Copy file `cp .env.example .env`
-3. Edit .env file with your DB connection information
-4. Run DB migrations `vendor/bin/phalcon-migrations migration run --config=migrations.php`
-
-
+-
 
 ## Certificate
 
