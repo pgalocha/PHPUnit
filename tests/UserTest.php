@@ -61,4 +61,32 @@ class UserTest extends TestCase {
         $user->notify('Hello');
     }
 
+    /**
+     * @throws Exception
+     */
+    public function testNotifyReturnsTrue()
+    {
+        $user = new User('dave@example.com');
+        $mailer = $this->createMock(Mailer::class);
+        $mailer
+            ->expects($this->once())
+            ->method('send')
+            ->willReturn(true);
+        $user->setMailer($mailer);
+        $this->assertTrue($user->notifyUser('hello'));
+    }
+
+    /**
+     * @throws Exception
+     */
+    public function testNotifyReturnsTrueStatic()
+    {
+        $user = new User('dave@example.com');
+        $user->setMailerCallable(function (){
+            echo 'mocked';
+            return true;
+        });
+
+        $this->assertTrue($user->notifyUserStatic('Hello'));
+    }
 }
